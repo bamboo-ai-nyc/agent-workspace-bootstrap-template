@@ -1,0 +1,19 @@
+version: 1
+kind: bamboo_workspace_bootstrap
+
+# This public bootstrap file is intentionally non-secret. Bamboo may replace or
+# extend workspace configuration after the GitHub App is installed on this repo.
+workspace:
+  mode: customer_private_repo
+  release_channel: private_bamboo_template
+
+github:
+  recommended_app_installation: selected_repository_only
+  required_permissions:
+    contents: write
+    pull_requests: write
+    metadata: read
+  optional_permissions:
+    administration: write
+    members: write
+

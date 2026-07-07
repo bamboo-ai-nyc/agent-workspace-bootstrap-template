@@ -1,0 +1,15 @@
+# Never commit secrets. Bamboo stores connector credentials in the platform.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
