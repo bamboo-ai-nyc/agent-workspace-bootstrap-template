@@ -13,6 +13,7 @@ github:
     contents: write
     pull_requests: write
     metadata: read
+    workflows: write
   optional_permissions:
     administration: write
     members: write
